@@ -31,6 +31,7 @@ $(document).ready(function(){
         url: '/uploads/' + id,
         success: function(data){
           console.log(data.message);
+          file.previewElement.remove();
         }
       });
     }
